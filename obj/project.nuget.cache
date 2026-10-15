@@ -1,0 +1,1159 @@
+{
+  "version": 2,
+  "dgSpecHash": "oQ0BU1hbn/w=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.0\\microsoft.extensions.configuration.10.0.0.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.0\\microsoft.extensions.configuration.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.0\\microsoft.extensions.dependencyinjection.10.0.0.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0\\microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\10.0.0\\microsoft.extensions.diagnostics.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\10.0.0\\microsoft.extensions.fileproviders.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\10.0.0\\microsoft.extensions.hosting.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.extensions.logging\\10.0.0\\microsoft.extensions.logging.10.0.0.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.0\\microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.extensions.options\\10.0.0\\microsoft.extensions.options.10.0.0.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.0\\microsoft.extensions.primitives.10.0.0.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.graphics.win2d\\1.3.2\\microsoft.graphics.win2d.1.3.2.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.io.recyclablememorystream\\3.0.1\\microsoft.io.recyclablememorystream.3.0.1.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.maui.controls\\10.0.20\\microsoft.maui.controls.10.0.20.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.maui.controls.build.tasks\\10.0.20\\microsoft.maui.controls.build.tasks.10.0.20.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.maui.controls.core\\10.0.20\\microsoft.maui.controls.core.10.0.20.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.maui.controls.xaml\\10.0.20\\microsoft.maui.controls.xaml.10.0.20.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.maui.core\\10.0.20\\microsoft.maui.core.10.0.20.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.maui.essentials\\10.0.20\\microsoft.maui.essentials.10.0.20.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.maui.graphics\\10.0.20\\microsoft.maui.graphics.10.0.20.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\10.0.20\\microsoft.maui.graphics.win2d.winui.desktop.10.0.20.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.maui.resizetizer\\10.0.20\\microsoft.maui.resizetizer.10.0.20.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.net.illink.tasks\\10.0.13\\microsoft.net.illink.tasks.10.0.13.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.web.webview2\\1.0.3179.45\\microsoft.web.webview2.1.0.3179.45.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.windowsappsdk\\1.7.250909003\\microsoft.windowsappsdk.1.7.250909003.nupkg.sha512",
+    "C:\\Users\\Tony\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-android'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-android"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.DynamicAnimation (>= 1.1.0.3)' for 'net10.0-android'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.DynamicAnimation",
+      "targetGraphs": [
+        "net10.0-android"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.Android.Glide (>= 4.16.0.14)' for 'net10.0-android'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.Android.Glide",
+      "targetGraphs": [
+        "net10.0-android"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Lifecycle.LiveData (>= 2.9.2.1)' for 'net10.0-android'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Lifecycle.LiveData",
+      "targetGraphs": [
+        "net10.0-android"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.Common (>= 2.9.2.1)' for 'net10.0-android'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.Common",
+      "targetGraphs": [
+        "net10.0-android"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.Fragment (>= 2.9.2.1)' for 'net10.0-android'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.Fragment",
+      "targetGraphs": [
+        "net10.0-android"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.Runtime (>= 2.9.2.1)' for 'net10.0-android'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.Runtime",
+      "targetGraphs": [
+        "net10.0-android"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.UI (>= 2.9.2.1)' for 'net10.0-android'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.UI",
+      "targetGraphs": [
+        "net10.0-android"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.SwipeRefreshLayout (>= 1.1.0.29)' for 'net10.0-android'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.SwipeRefreshLayout",
+      "targetGraphs": [
+        "net10.0-android"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.Google.Android.Material (>= 1.12.0.5)' for 'net10.0-android'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.Google.Android.Material",
+      "targetGraphs": [
+        "net10.0-android"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Activity (>= 1.10.1.3)' for 'net10.0-android'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Activity",
+      "targetGraphs": [
+        "net10.0-android"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Browser (>= 1.8.0.11)' for 'net10.0-android'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Browser",
+      "targetGraphs": [
+        "net10.0-android"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Security.SecurityCrypto (>= 1.1.0.4-alpha07)' for 'net10.0-android'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Security.SecurityCrypto",
+      "targetGraphs": [
+        "net10.0-android"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.Google.Crypto.Tink.Android (>= 1.18.0.1)' for 'net10.0-android'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.Google.Crypto.Tink.Android",
+      "targetGraphs": [
+        "net10.0-android"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-ios'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-ios"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-maccatalyst'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-maccatalyst"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-windows10.0.19041.0'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-windows10.0.19041.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-android/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-android/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.DynamicAnimation (>= 1.1.0.3)' for 'net10.0-android/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.DynamicAnimation",
+      "targetGraphs": [
+        "net10.0-android/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.Android.Glide (>= 4.16.0.14)' for 'net10.0-android/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.Android.Glide",
+      "targetGraphs": [
+        "net10.0-android/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Lifecycle.LiveData (>= 2.9.2.1)' for 'net10.0-android/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Lifecycle.LiveData",
+      "targetGraphs": [
+        "net10.0-android/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.Common (>= 2.9.2.1)' for 'net10.0-android/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.Common",
+      "targetGraphs": [
+        "net10.0-android/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.Fragment (>= 2.9.2.1)' for 'net10.0-android/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.Fragment",
+      "targetGraphs": [
+        "net10.0-android/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.Runtime (>= 2.9.2.1)' for 'net10.0-android/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.Runtime",
+      "targetGraphs": [
+        "net10.0-android/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.UI (>= 2.9.2.1)' for 'net10.0-android/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.UI",
+      "targetGraphs": [
+        "net10.0-android/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.SwipeRefreshLayout (>= 1.1.0.29)' for 'net10.0-android/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.SwipeRefreshLayout",
+      "targetGraphs": [
+        "net10.0-android/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.Google.Android.Material (>= 1.12.0.5)' for 'net10.0-android/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.Google.Android.Material",
+      "targetGraphs": [
+        "net10.0-android/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Activity (>= 1.10.1.3)' for 'net10.0-android/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Activity",
+      "targetGraphs": [
+        "net10.0-android/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Browser (>= 1.8.0.11)' for 'net10.0-android/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Browser",
+      "targetGraphs": [
+        "net10.0-android/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Security.SecurityCrypto (>= 1.1.0.4-alpha07)' for 'net10.0-android/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Security.SecurityCrypto",
+      "targetGraphs": [
+        "net10.0-android/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.Google.Crypto.Tink.Android (>= 1.18.0.1)' for 'net10.0-android/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.Google.Crypto.Tink.Android",
+      "targetGraphs": [
+        "net10.0-android/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-android/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-android/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.DynamicAnimation (>= 1.1.0.3)' for 'net10.0-android/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.DynamicAnimation",
+      "targetGraphs": [
+        "net10.0-android/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.Android.Glide (>= 4.16.0.14)' for 'net10.0-android/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.Android.Glide",
+      "targetGraphs": [
+        "net10.0-android/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Lifecycle.LiveData (>= 2.9.2.1)' for 'net10.0-android/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Lifecycle.LiveData",
+      "targetGraphs": [
+        "net10.0-android/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.Common (>= 2.9.2.1)' for 'net10.0-android/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.Common",
+      "targetGraphs": [
+        "net10.0-android/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.Fragment (>= 2.9.2.1)' for 'net10.0-android/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.Fragment",
+      "targetGraphs": [
+        "net10.0-android/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.Runtime (>= 2.9.2.1)' for 'net10.0-android/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.Runtime",
+      "targetGraphs": [
+        "net10.0-android/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.UI (>= 2.9.2.1)' for 'net10.0-android/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.UI",
+      "targetGraphs": [
+        "net10.0-android/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.SwipeRefreshLayout (>= 1.1.0.29)' for 'net10.0-android/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.SwipeRefreshLayout",
+      "targetGraphs": [
+        "net10.0-android/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.Google.Android.Material (>= 1.12.0.5)' for 'net10.0-android/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.Google.Android.Material",
+      "targetGraphs": [
+        "net10.0-android/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Activity (>= 1.10.1.3)' for 'net10.0-android/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Activity",
+      "targetGraphs": [
+        "net10.0-android/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Browser (>= 1.8.0.11)' for 'net10.0-android/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Browser",
+      "targetGraphs": [
+        "net10.0-android/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Security.SecurityCrypto (>= 1.1.0.4-alpha07)' for 'net10.0-android/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Security.SecurityCrypto",
+      "targetGraphs": [
+        "net10.0-android/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.Google.Crypto.Tink.Android (>= 1.18.0.1)' for 'net10.0-android/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.Google.Crypto.Tink.Android",
+      "targetGraphs": [
+        "net10.0-android/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-android/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-android/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.DynamicAnimation (>= 1.1.0.3)' for 'net10.0-android/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.DynamicAnimation",
+      "targetGraphs": [
+        "net10.0-android/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.Android.Glide (>= 4.16.0.14)' for 'net10.0-android/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.Android.Glide",
+      "targetGraphs": [
+        "net10.0-android/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Lifecycle.LiveData (>= 2.9.2.1)' for 'net10.0-android/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Lifecycle.LiveData",
+      "targetGraphs": [
+        "net10.0-android/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.Common (>= 2.9.2.1)' for 'net10.0-android/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.Common",
+      "targetGraphs": [
+        "net10.0-android/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.Fragment (>= 2.9.2.1)' for 'net10.0-android/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.Fragment",
+      "targetGraphs": [
+        "net10.0-android/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.Runtime (>= 2.9.2.1)' for 'net10.0-android/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.Runtime",
+      "targetGraphs": [
+        "net10.0-android/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.UI (>= 2.9.2.1)' for 'net10.0-android/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.UI",
+      "targetGraphs": [
+        "net10.0-android/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.SwipeRefreshLayout (>= 1.1.0.29)' for 'net10.0-android/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.SwipeRefreshLayout",
+      "targetGraphs": [
+        "net10.0-android/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.Google.Android.Material (>= 1.12.0.5)' for 'net10.0-android/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.Google.Android.Material",
+      "targetGraphs": [
+        "net10.0-android/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Activity (>= 1.10.1.3)' for 'net10.0-android/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Activity",
+      "targetGraphs": [
+        "net10.0-android/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Browser (>= 1.8.0.11)' for 'net10.0-android/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Browser",
+      "targetGraphs": [
+        "net10.0-android/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Security.SecurityCrypto (>= 1.1.0.4-alpha07)' for 'net10.0-android/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Security.SecurityCrypto",
+      "targetGraphs": [
+        "net10.0-android/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.Google.Crypto.Tink.Android (>= 1.18.0.1)' for 'net10.0-android/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.Google.Crypto.Tink.Android",
+      "targetGraphs": [
+        "net10.0-android/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-android/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-android/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.DynamicAnimation (>= 1.1.0.3)' for 'net10.0-android/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.DynamicAnimation",
+      "targetGraphs": [
+        "net10.0-android/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.Android.Glide (>= 4.16.0.14)' for 'net10.0-android/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.Android.Glide",
+      "targetGraphs": [
+        "net10.0-android/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Lifecycle.LiveData (>= 2.9.2.1)' for 'net10.0-android/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Lifecycle.LiveData",
+      "targetGraphs": [
+        "net10.0-android/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.Common (>= 2.9.2.1)' for 'net10.0-android/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.Common",
+      "targetGraphs": [
+        "net10.0-android/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.Fragment (>= 2.9.2.1)' for 'net10.0-android/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.Fragment",
+      "targetGraphs": [
+        "net10.0-android/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.Runtime (>= 2.9.2.1)' for 'net10.0-android/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.Runtime",
+      "targetGraphs": [
+        "net10.0-android/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.UI (>= 2.9.2.1)' for 'net10.0-android/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.UI",
+      "targetGraphs": [
+        "net10.0-android/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.SwipeRefreshLayout (>= 1.1.0.29)' for 'net10.0-android/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.SwipeRefreshLayout",
+      "targetGraphs": [
+        "net10.0-android/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.Google.Android.Material (>= 1.12.0.5)' for 'net10.0-android/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.Google.Android.Material",
+      "targetGraphs": [
+        "net10.0-android/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Activity (>= 1.10.1.3)' for 'net10.0-android/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Activity",
+      "targetGraphs": [
+        "net10.0-android/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Browser (>= 1.8.0.11)' for 'net10.0-android/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Browser",
+      "targetGraphs": [
+        "net10.0-android/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Security.SecurityCrypto (>= 1.1.0.4-alpha07)' for 'net10.0-android/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Security.SecurityCrypto",
+      "targetGraphs": [
+        "net10.0-android/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.Google.Crypto.Tink.Android (>= 1.18.0.1)' for 'net10.0-android/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.Google.Crypto.Tink.Android",
+      "targetGraphs": [
+        "net10.0-android/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-android/win-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-android/win-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.DynamicAnimation (>= 1.1.0.3)' for 'net10.0-android/win-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.DynamicAnimation",
+      "targetGraphs": [
+        "net10.0-android/win-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.Android.Glide (>= 4.16.0.14)' for 'net10.0-android/win-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.Android.Glide",
+      "targetGraphs": [
+        "net10.0-android/win-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Lifecycle.LiveData (>= 2.9.2.1)' for 'net10.0-android/win-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Lifecycle.LiveData",
+      "targetGraphs": [
+        "net10.0-android/win-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.Common (>= 2.9.2.1)' for 'net10.0-android/win-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.Common",
+      "targetGraphs": [
+        "net10.0-android/win-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.Fragment (>= 2.9.2.1)' for 'net10.0-android/win-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.Fragment",
+      "targetGraphs": [
+        "net10.0-android/win-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.Runtime (>= 2.9.2.1)' for 'net10.0-android/win-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.Runtime",
+      "targetGraphs": [
+        "net10.0-android/win-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Navigation.UI (>= 2.9.2.1)' for 'net10.0-android/win-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Navigation.UI",
+      "targetGraphs": [
+        "net10.0-android/win-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.SwipeRefreshLayout (>= 1.1.0.29)' for 'net10.0-android/win-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.SwipeRefreshLayout",
+      "targetGraphs": [
+        "net10.0-android/win-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.Google.Android.Material (>= 1.12.0.5)' for 'net10.0-android/win-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.Google.Android.Material",
+      "targetGraphs": [
+        "net10.0-android/win-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Activity (>= 1.10.1.3)' for 'net10.0-android/win-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Activity",
+      "targetGraphs": [
+        "net10.0-android/win-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Browser (>= 1.8.0.11)' for 'net10.0-android/win-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Browser",
+      "targetGraphs": [
+        "net10.0-android/win-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.AndroidX.Security.SecurityCrypto (>= 1.1.0.4-alpha07)' for 'net10.0-android/win-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.AndroidX.Security.SecurityCrypto",
+      "targetGraphs": [
+        "net10.0-android/win-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Xamarin.Google.Crypto.Tink.Android (>= 1.18.0.1)' for 'net10.0-android/win-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Xamarin.Google.Crypto.Tink.Android",
+      "targetGraphs": [
+        "net10.0-android/win-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-ios/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-ios/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-ios/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-ios/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-ios/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-ios/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-ios/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-ios/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-ios/win-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-ios/win-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-maccatalyst/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-maccatalyst/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-maccatalyst/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-maccatalyst/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-maccatalyst/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-maccatalyst/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-maccatalyst/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-maccatalyst/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-maccatalyst/win-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-maccatalyst/win-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-windows10.0.19041.0/android-arm64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-windows10.0.19041.0/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-windows10.0.19041.0/android-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-windows10.0.19041.0/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-windows10.0.19041.0/iossimulator-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-windows10.0.19041.0/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-windows10.0.19041.0/maccatalyst-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-windows10.0.19041.0/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Logging.Debug (>= 10.0.0)' for 'net10.0-windows10.0.19041.0/win-x64'. PackageSourceMapping is enabled, the following source(s) were not considered: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "filePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+      "libraryId": "Microsoft.Extensions.Logging.Debug",
+      "targetGraphs": [
+        "net10.0-windows10.0.19041.0/win-x64"
+      ]
+    }
+  ]
+}
