@@ -27,6 +27,11 @@
     <Color x:Key="Gray900">#212121</Color>
     <Color x:Key="Gray950">#141414</Color>
 
+    <!-- High-contrast status colours for outdoor use -->
+    <Color x:Key="SafetyOrange">#E65100</Color>
+    <Color x:Key="StatusGreen">#2E7D32</Color>
+    <Color x:Key="StatusBlue">#1565C0</Color>
+    <Color x:Key="StatusAmber">#B26A00</Color>
     <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}"/>
     <SolidColorBrush x:Key="SecondaryBrush" Color="{StaticResource Secondary}"/>
     <SolidColorBrush x:Key="TertiaryBrush" Color="{StaticResource Tertiary}"/>
