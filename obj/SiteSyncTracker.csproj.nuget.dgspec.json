@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj": {}
+    "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj": {
+    "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+        "projectUniqueName": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
         "projectName": "SiteSyncTracker",
-        "projectPath": "c:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+        "projectPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
         "packagesPath": "C:\\Users\\Tony\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\obj\\",
+        "outputPath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "c:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\NuGet.Config",
+          "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\NuGet.Config",
           "C:\\Users\\Tony\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
