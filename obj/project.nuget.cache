@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "go87ItLwVnY=",
+  "dgSpecHash": "QnEFFuzBStA=",
   "success": true,
-  "projectFilePath": "c:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+  "projectFilePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tony\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.2\\communitytoolkit.mvvm.8.4.2.nupkg.sha512",
     "C:\\Users\\Tony\\.nuget\\packages\\googlegson\\2.13.1.1\\googlegson.2.13.1.1.nupkg.sha512",

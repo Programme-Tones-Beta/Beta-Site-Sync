@@ -17,7 +17,7 @@
             </Grid>
 
             <Label Text="Description" />
-            <Editor Placeholder="What was delivered?" AutoSize="TextChanges" MaximumLength="255" HeightRequest="96" />
+            <Editor Placeholder="What was delivered?" AutoSize="TextChanges" MaxLength="255" HeightRequest="96" />
 
             <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
                 <VerticalStackLayout>
