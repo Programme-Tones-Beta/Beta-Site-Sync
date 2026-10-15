@@ -37,5 +37,9 @@ namespace SiteSyncTracker.Models
 
         [ForeignKey("CurrentLocationId")]
         public Location? CurrentLocation { get; set; }
+
+        // Recipient (phone number or email) for push/text/email alerts on goods in/out.
+        [StringLength(255)]
+        public string? NotifyTo { get; set; }
     }
 }

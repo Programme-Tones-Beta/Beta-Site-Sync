@@ -12,5 +12,9 @@ namespace SiteSyncTracker.Models
         [Required]
         [StringLength(50)]
         public string StatusName { get; set; } = string.Empty;
+
+        // Recipient (phone number or email) for push/text/email alerts on goods in/out.
+        [StringLength(255)]
+        public string? NotifyTo { get; set; }
     }
 }
