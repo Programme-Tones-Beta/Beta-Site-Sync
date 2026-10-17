@@ -1,0 +1,8 @@
+﻿[ResourceMetadata]
+"ResourceId"			"filemap.language-ka"
+"ResourceDimensions"		"language-ka-ge"
+
+[Files]
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\Release\net10.0-windows10.0.19041.0\win-x64\filemap.language-ka.pri"			"resources.pri"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\ka-GE\Microsoft.UI.Xaml.Phone.dll.mui"			"ka-GE\Microsoft.UI.Xaml.Phone.dll.mui"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\ka-GE\Microsoft.ui.xaml.dll.mui"			"ka-GE\Microsoft.ui.xaml.dll.mui"
