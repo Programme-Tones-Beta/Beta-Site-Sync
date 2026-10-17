@@ -1,0 +1,11 @@
+﻿[ResourceMetadata]
+"ResourceId"			"filemap.language-sr-cyrl"
+"ResourceDimensions"		"language-sr-cyrl-ba"
+"ResourceDimensions"		"language-sr-cyrl-rs"
+
+[Files]
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\Release\net10.0-windows10.0.19041.0\win-x64\filemap.language-sr-cyrl.pri"			"resources.pri"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\sr-Cyrl-RS\Microsoft.UI.Xaml.Phone.dll.mui"			"sr-Cyrl-RS\Microsoft.UI.Xaml.Phone.dll.mui"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\sr-Cyrl-RS\Microsoft.ui.xaml.dll.mui"			"sr-Cyrl-RS\Microsoft.ui.xaml.dll.mui"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\sr-Cyrl-BA\Microsoft.UI.Xaml.Phone.dll.mui"			"sr-Cyrl-BA\Microsoft.UI.Xaml.Phone.dll.mui"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\sr-Cyrl-BA\Microsoft.ui.xaml.dll.mui"			"sr-Cyrl-BA\Microsoft.ui.xaml.dll.mui"

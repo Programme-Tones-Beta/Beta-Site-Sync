@@ -1,0 +1,13 @@
+﻿[ResourceMetadata]
+"ResourceId"			"filemap.language-fr"
+"ResourceDimensions"		"language-fr"
+"ResourceDimensions"		"language-fr-ca"
+"ResourceDimensions"		"language-fr-fr"
+
+[Files]
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\Release\net10.0-windows10.0.19041.0\win-x64\filemap.language-fr.pri"			"resources.pri"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\fr-FR\Microsoft.UI.Xaml.Phone.dll.mui"			"fr-FR\Microsoft.UI.Xaml.Phone.dll.mui"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\fr-FR\Microsoft.ui.xaml.dll.mui"			"fr-FR\Microsoft.ui.xaml.dll.mui"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\fr-CA\Microsoft.UI.Xaml.Phone.dll.mui"			"fr-CA\Microsoft.UI.Xaml.Phone.dll.mui"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\fr-CA\Microsoft.ui.xaml.dll.mui"			"fr-CA\Microsoft.ui.xaml.dll.mui"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\fr\Microsoft.Maui.Controls.resources.dll"			"fr\Microsoft.Maui.Controls.resources.dll"
