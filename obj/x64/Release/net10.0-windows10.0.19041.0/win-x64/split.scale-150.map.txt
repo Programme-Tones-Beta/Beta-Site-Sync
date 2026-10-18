@@ -1,0 +1,14 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.scale-150"
+"ResourceDimensions"		"scale-150"
+
+[Files]
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\x64\Release\net10.0-windows10.0.19041.0\win-x64\split.scale-150.pri"			"resources.pri"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\x64\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\splashSplashScreen.scale-150.png"			"splashSplashScreen.scale-150.png"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\x64\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\dotnet_bot.scale-150.png"			"dotnet_bot.scale-150.png"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\x64\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\appiconWideTile.scale-150.png"			"appiconWideTile.scale-150.png"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\x64\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\appiconStoreLogo.scale-150.png"			"appiconStoreLogo.scale-150.png"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\x64\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\appiconSmallTile.scale-150.png"			"appiconSmallTile.scale-150.png"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\x64\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\appiconMediumTile.scale-150.png"			"appiconMediumTile.scale-150.png"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\x64\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\appiconLogo.scale-150.png"			"appiconLogo.scale-150.png"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\x64\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\appiconLargeTile.scale-150.png"			"appiconLargeTile.scale-150.png"

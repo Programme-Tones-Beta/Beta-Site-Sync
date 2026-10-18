@@ -1,0 +1,10 @@
+﻿[ResourceMetadata]
+"ResourceId"			"filemap.language-hr"
+"ResourceDimensions"		"language-hr"
+"ResourceDimensions"		"language-hr-hr"
+
+[Files]
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\Release\net10.0-windows10.0.19041.0\win-x64\filemap.language-hr.pri"			"resources.pri"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\hr-HR\Microsoft.UI.Xaml.Phone.dll.mui"			"hr-HR\Microsoft.UI.Xaml.Phone.dll.mui"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\hr-HR\Microsoft.ui.xaml.dll.mui"			"hr-HR\Microsoft.ui.xaml.dll.mui"
+"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\hr\Microsoft.Maui.Controls.resources.dll"			"hr\Microsoft.Maui.Controls.resources.dll"
