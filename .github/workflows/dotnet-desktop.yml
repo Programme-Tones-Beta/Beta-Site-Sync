@@ -89,7 +89,32 @@ jobs:
 
     # Decode the base 64 encoded pfx and save the Signing_Certificate
     - name: Decode the pfx
-      run: |
+      run: |      run: |name: Deploy to Azure App Service
+            ^name: Deploy to Azure App Service
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 'Checkout GitHub Action'
+      uses: actions/checkout@v2
+
+    - name: 'Login via Azure CLI'
+      uses: azure/login@v2
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: 'Build and Deploy to Azure Web App'
+      uses: azure/webapps-deploy@v3
+      with:
+        app-name: 'your-app-name'
+        package: '.'
+
         $pfx_cert_byte = [System.Convert]::FromBase64String("${{ secrets.Base64_Encoded_Pfx }}")
         $certificatePath = Join-Path -Path $env:Wap_Project_Directory -ChildPath GitHubActionsWorkflow.pfx
         [IO.File]::WriteAllBytes("$certificatePath", $pfx_cert_byte)
