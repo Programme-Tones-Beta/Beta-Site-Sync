@@ -6,6 +6,11 @@
       "appliesTo": "/",
       "type": "launch",
       "launchName": "task-site-sync-launch"
+    },
+    {
+      "appliesTo": "SiteSyncTracker.csproj",
+      "taskLabel": "task-SiteSyncTracker",
+      "type": "msbuild"
     }
   ]
 }

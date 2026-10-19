@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\AppPackages",
-    "\\AppPackages\\SiteSyncTracker_1.0.0.1_Preview"
+    "\\.github\\workflows",
+    "\\docs",
+    "\\Platforms",
+    "\\Platforms\\Android",
+    "\\Platforms\\Windows"
   ],
-  "PreviewInSolutionExplorer": true
+  "SelectedNode": "\\MainPage.xaml.cs",
+  "PreviewInSolutionExplorer": false
 }
