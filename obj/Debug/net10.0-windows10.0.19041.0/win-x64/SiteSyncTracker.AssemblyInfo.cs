@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SiteSyncTracker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b71c475d075de643968fda84cfd7e2c6b7b47d04")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11b13a6b10837775acb86a722fa18896b8f97b85")]
 [assembly: System.Reflection.AssemblyProductAttribute("SiteSyncTracker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SiteSyncTracker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
