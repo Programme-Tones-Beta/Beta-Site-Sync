@@ -1,8 +1,0 @@
-﻿[ResourceMetadata]
-"ResourceId"			"filemap.language-ne"
-"ResourceDimensions"		"language-ne-np"
-
-[Files]
-"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\x64\Release\net10.0-windows10.0.19041.0\win-x64\filemap.language-ne.pri"			"resources.pri"
-"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\x64\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\ne-NP\Microsoft.UI.Xaml.Phone.dll.mui"			"ne-NP\Microsoft.UI.Xaml.Phone.dll.mui"
-"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\x64\Release\net10.0-windows10.0.19041.0\win-x64\PackageLayout\ne-NP\Microsoft.ui.xaml.dll.mui"			"ne-NP\Microsoft.ui.xaml.dll.mui"
