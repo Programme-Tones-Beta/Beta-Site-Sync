@@ -1,6 +1,0 @@
-﻿[ResourceMetadata]
-"ResourceId"			"split.language-mk"
-"ResourceDimensions"		"language-mk-mk"
-
-[Files]
-"C:\Users\Tony\OneDrive\Desktop\site sync\site-sync\obj\Release\net10.0-windows10.0.19041.0\win-x64\split.language-mk.pri"			"resources.pri"
