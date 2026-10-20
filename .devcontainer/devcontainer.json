@@ -16,7 +16,9 @@
 			"extensions": [
 				"streetsidesoftware.code-spell-checker",
 				"DavidAnson.vscode-markdownlint",
-				"bierner.github-markdown-preview"
+				"bierner.github-markdown-preview",
+				"vscjava.vscode-java-test",
+				"Cameron.vscode-pytest"
 			]
 		}
 	}
