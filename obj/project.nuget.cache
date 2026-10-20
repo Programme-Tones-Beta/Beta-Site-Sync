@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9gt3C8UQVnM=",
+  "dgSpecHash": "IlvJ6WD4ueY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\site-sync\\SiteSyncTracker.csproj",
+  "projectFilePath": "C:\\Users\\Tony\\OneDrive\\Desktop\\site sync\\beta site sync\\SiteSyncTracker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tony\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.2\\communitytoolkit.mvvm.8.4.2.nupkg.sha512",
     "C:\\Users\\Tony\\.nuget\\packages\\microsoft.data.sqlite.core\\10.0.13\\microsoft.data.sqlite.core.10.0.13.nupkg.sha512",
