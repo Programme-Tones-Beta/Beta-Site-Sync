@@ -22,8 +22,8 @@ jobs:
         with:
           dotnet-version: 10.0.x
 
-      - name: Restore web dependencies
-        run: dotnet restore Web/SiteSyncTracker.Web.csproj
+      - name: Restore web and test dependencies
+        run: dotnet restore Web.Tests/SiteSyncTracker.Web.Tests.csproj
 
       - name: Run web tests
         run: dotnet test Web.Tests/SiteSyncTracker.Web.Tests.csproj --configuration Release --no-restore
@@ -35,7 +35,15 @@ jobs:
         run: docker build --file Web/Dockerfile --tag sitesync-tracker-web:${{ github.sha }} .
 
       - name: Validate Docker image health
-        run: docker run --detach --name sitesync-ci --publish 18080:8080 sitesync-tracker-web:${{ github.sha }}
+        run: >-
+          docker run --detach --name sitesync-ci --publish 18080:8080
+          --volume sitesync-ci-data:/data
+          --env ASPNETCORE_ENVIRONMENT=Production
+          --env ConnectionStrings__Inventory='Data Source=/data/sitesync.db'
+          --env ConnectionStrings__Identity='Data Source=/data/sitesync-auth.db'
+          --env Admin__Email=ci-admin@example.com
+          --env Admin__Password=ci-Only-Password-123!
+          sitesync-tracker-web:${{ github.sha }}
 
       - name: Wait for health endpoint
         shell: bash
