@@ -1,4 +1,3 @@
-using Microsoft.EntityFrameworkCore;
 using SiteSyncTracker.Models;
 
 namespace SiteSyncTracker.Data;

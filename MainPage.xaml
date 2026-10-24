@@ -2,73 +2,128 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SiteSyncTracker.MainPage"
-             Title="Dashboard">
+             Title="Dashboard"
+             BackgroundColor="#f2f2f2">
 
-    <ScrollView>
-        <VerticalStackLayout Padding="16" Spacing="16">
-            <Label Text="Site Overview"
-                   FontSize="26"
-                   FontAttributes="Bold"
-                   SemanticProperties.HeadingLevel="Level1" />
+    <Grid RowDefinitions="Auto,*,Auto" BackgroundColor="#f2f2f2">
+        <Grid Grid.Row="0" Padding="16,10,16,0" ColumnDefinitions="*,Auto">
+            <Label Text="9:41" FontSize="22" FontAttributes="Bold" Margin="0,0,0,4" />
+            <HorizontalStackLayout Grid.Column="1" Spacing="8" VerticalOptions="Center">
+                <Border WidthRequest="14" HeightRequest="10" Padding="0" StrokeThickness="0" BackgroundColor="#2E2E2E" StrokeShape="RoundRectangle 2" />
+                <Border WidthRequest="14" HeightRequest="10" Padding="0" StrokeThickness="0" BackgroundColor="#2E2E2E" StrokeShape="RoundRectangle 2" />
+                <Border WidthRequest="14" HeightRequest="10" Padding="0" StrokeThickness="0" BackgroundColor="#2E2E2E" StrokeShape="RoundRectangle 2" />
+                <Border WidthRequest="18" HeightRequest="12" Padding="0" StrokeThickness="1.5" Stroke="#2E2E2E" BackgroundColor="Transparent" StrokeShape="RoundRectangle 2" />
+                <BoxView WidthRequest="16" HeightRequest="12" Color="Transparent" />
+            </HorizontalStackLayout>
+        </Grid>
 
-            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" ColumnSpacing="12" RowSpacing="12">
-                <Border Grid.Row="0" Grid.Column="0" Padding="16" StrokeShape="RoundRectangle 8"
-                        BackgroundColor="{StaticResource StatusAmber}">
-                    <VerticalStackLayout>
-                        <Label Text="12" FontSize="36" FontAttributes="Bold" TextColor="White" />
-                        <Label Text="In Transit" TextColor="White" />
-                    </VerticalStackLayout>
-                </Border>
-                <Border Grid.Row="0" Grid.Column="1" Padding="16" StrokeShape="RoundRectangle 8"
-                        BackgroundColor="{StaticResource StatusBlue}">
-                    <VerticalStackLayout>
-                        <Label Text="48" FontSize="36" FontAttributes="Bold" TextColor="White" />
-                        <Label Text="Delivered to Yard" TextColor="White" />
-                    </VerticalStackLayout>
-                </Border>
-                <Border Grid.Row="1" Grid.Column="0" Padding="16" StrokeShape="RoundRectangle 8"
-                        BackgroundColor="{StaticResource SafetyOrange}">
-                    <VerticalStackLayout>
-                        <Label Text="21" FontSize="36" FontAttributes="Bold" TextColor="White" />
-                        <Label Text="Staged on Level" TextColor="White" />
-                    </VerticalStackLayout>
-                </Border>
-                <Border Grid.Row="1" Grid.Column="1" Padding="16" StrokeShape="RoundRectangle 8"
-                        BackgroundColor="{StaticResource StatusGreen}">
-                    <VerticalStackLayout>
-                        <Label Text="95" FontSize="36" FontAttributes="Bold" TextColor="White" />
-                        <Label Text="Installed" TextColor="White" />
-                    </VerticalStackLayout>
-                </Border>
-            </Grid>
+        <BoxView Grid.Row="0" VerticalOptions="End" HeightRequest="2" Margin="0,0,0,0" Color="#D5D5D5" />
 
-            <Label Text="Quick Actions" FontSize="20" FontAttributes="Bold" />
-            <Button Text="Goods In (Receive)" HeightRequest="64" FontSize="20"
-                    BackgroundColor="{StaticResource StatusGreen}" TextColor="White"
-                    Clicked="OnGoodsInClicked" SemanticProperties.Hint="Opens the goods in form" />
-            <Button Text="Goods Out (Issue)" HeightRequest="64" FontSize="20"
-                    BackgroundColor="{StaticResource SafetyOrange}" TextColor="White"
-                    Clicked="OnGoodsOutClicked" SemanticProperties.Hint="Opens the goods out form" />
-            <Button Text="Scan Manifest" HeightRequest="64" FontSize="20"
-                    Clicked="OnInventoryClicked" SemanticProperties.Hint="Opens inventory search" />
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Padding="18,8,18,12" Spacing="18">
+                <Label Text="Dashboard"
+                       FontSize="32"
+                       FontAttributes="Bold"
+                       Margin="0,12,0,0"
+                       SemanticProperties.HeadingLevel="Level1" />
 
-            <Label Text="Recent Activity" FontSize="20" FontAttributes="Bold" />
-            <Border Padding="12" StrokeShape="RoundRectangle 8" Stroke="{StaticResource Gray300}">
-                <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto">
-                    <Label Grid.Row="0" Text="MAN-1042 Rebar bundles" FontAttributes="Bold" />
-                    <Label Grid.Row="1" Text="Main Laydown Yard" TextColor="{StaticResource Gray500}" />
-                    <Label Grid.RowSpan="2" Grid.Column="1" Text="Delivered" VerticalOptions="Center"
-                           TextColor="{StaticResource StatusBlue}" FontAttributes="Bold" />
+                <Label Text="Site Overview"
+                       FontSize="36"
+                       FontAttributes="Bold"
+                       Margin="0,4,0,0"
+                       SemanticProperties.HeadingLevel="Level2" />
+
+                <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" ColumnSpacing="14" RowSpacing="14">
+                    <Border Grid.Row="0" Grid.Column="0" Padding="16,18" StrokeThickness="0" StrokeShape="RoundRectangle 12" BackgroundColor="#B7782D">
+                        <VerticalStackLayout Spacing="4">
+                            <Label Text="12" FontSize="54" FontAttributes="Bold" TextColor="White" />
+                            <Label Text="In Transit" FontSize="20" TextColor="White" />
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <Border Grid.Row="0" Grid.Column="1" Padding="16,18" StrokeThickness="0" StrokeShape="RoundRectangle 12" BackgroundColor="#1E78B8">
+                        <VerticalStackLayout Spacing="4">
+                            <Label Text="48" FontSize="54" FontAttributes="Bold" TextColor="White" />
+                            <Label Text="Delivered to Yard" FontSize="20" TextColor="White" />
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <Border Grid.Row="1" Grid.Column="0" Padding="16,18" StrokeThickness="0" StrokeShape="RoundRectangle 12" BackgroundColor="#E8551A">
+                        <VerticalStackLayout Spacing="4">
+                            <Label Text="21" FontSize="54" FontAttributes="Bold" TextColor="White" />
+                            <Label Text="Staged on Level" FontSize="20" TextColor="White" />
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <Border Grid.Row="1" Grid.Column="1" Padding="16,18" StrokeThickness="0" StrokeShape="RoundRectangle 12" BackgroundColor="#1D8F4D">
+                        <VerticalStackLayout Spacing="4">
+                            <Label Text="95" FontSize="54" FontAttributes="Bold" TextColor="White" />
+                            <Label Text="Installed" FontSize="20" TextColor="White" />
+                        </VerticalStackLayout>
+                    </Border>
                 </Grid>
-            </Border>
-            <Border Padding="12" StrokeShape="RoundRectangle 8" Stroke="{StaticResource Gray300}">
-                <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto">
-                    <Label Grid.Row="0" Text="MAN-1038 Steel beams" FontAttributes="Bold" />
-                    <Label Grid.Row="1" Text="Level 1 Structure" TextColor="{StaticResource Gray500}" />
-                    <Label Grid.RowSpan="2" Grid.Column="1" Text="Staged" VerticalOptions="Center"
-                           TextColor="{StaticResource SafetyOrange}" FontAttributes="Bold" />
-                </Grid>
-            </Border>
-        </VerticalStackLayout>
-    </ScrollView>
+
+                <Label Text="Quick Actions" FontSize="30" FontAttributes="Bold" Margin="0,8,0,0" />
+
+                <Button Text="Goods In (Receive)"
+                        HeightRequest="72"
+                        FontSize="26"
+                        TextColor="White"
+                        BackgroundColor="#1F8C48"
+                        BorderWidth="0"
+                        CornerRadius="12"
+                        Clicked="OnGoodsInClicked"
+                        SemanticProperties.Hint="Opens the goods in form" />
+
+                <Button Text="Goods Out (Issue)"
+                        HeightRequest="72"
+                        FontSize="26"
+                        TextColor="White"
+                        BackgroundColor="#E5541F"
+                        BorderWidth="0"
+                        CornerRadius="12"
+                        Clicked="OnGoodsOutClicked"
+                        SemanticProperties.Hint="Opens the goods out form" />
+
+                <Button Text="Scan Manifest"
+                        HeightRequest="72"
+                        FontSize="26"
+                        TextColor="White"
+                        BackgroundColor="#5E3DE6"
+                        BorderWidth="0"
+                        CornerRadius="12"
+                        Clicked="OnInventoryClicked"
+                        SemanticProperties.Hint="Opens inventory search" />
+
+                <Label Text="Recent Activity" FontSize="30" FontAttributes="Bold" Margin="0,8,0,0" />
+
+                <Border Padding="16,14" StrokeThickness="1.5" Stroke="#C9C9C9" StrokeShape="RoundRectangle 12" BackgroundColor="#F5F5F5">
+                    <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto">
+                        <Label Grid.Row="0" Text="MAN-1042 Rebar bundles" FontSize="18" FontAttributes="Bold" />
+                        <Label Grid.Row="1" Text="Main Laydown Yard" FontSize="16" TextColor="#666666" />
+                        <Label Grid.RowSpan="2" Grid.Column="1" Text="Delivered" FontSize="18" VerticalOptions="Center" FontAttributes="Bold" TextColor="#1E78B8" Margin="16,0,0,0" />
+                    </Grid>
+                </Border>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Grid Grid.Row="2" Padding="14,12,14,18" ColumnDefinitions="*,*,*,*" BackgroundColor="#F5F5F5">
+            <VerticalStackLayout Grid.Column="0" Spacing="4" HorizontalOptions="Center">
+                <Ellipse Fill="#D61B7A" WidthRequest="12" HeightRequest="12" />
+                <Label Text="Dashboard" FontSize="14" FontAttributes="Bold" TextColor="#D61B7A" HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+            <VerticalStackLayout Grid.Column="1" Spacing="4" HorizontalOptions="Center">
+                <Ellipse Fill="#5A5A5A" WidthRequest="12" HeightRequest="12" />
+                <Label Text="Goods In" FontSize="14" TextColor="#4A4A4A" HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+            <VerticalStackLayout Grid.Column="2" Spacing="4" HorizontalOptions="Center">
+                <Ellipse Fill="#5A5A5A" WidthRequest="12" HeightRequest="12" />
+                <Label Text="Goods Out" FontSize="14" TextColor="#4A4A4A" HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+            <VerticalStackLayout Grid.Column="3" Spacing="4" HorizontalOptions="Center">
+                <Ellipse Fill="#5A5A5A" WidthRequest="12" HeightRequest="12" />
+                <Label Text="Inventory" FontSize="14" TextColor="#4A4A4A" HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
 </ContentPage>

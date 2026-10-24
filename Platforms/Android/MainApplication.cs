@@ -1,7 +1,4 @@
-﻿using Android.App;
-using Android.Runtime;
-
-namespace SiteSyncTracker;
+﻿namespace SiteSyncTracker;
 
 [Application]
 public class MainApplication : MauiApplication

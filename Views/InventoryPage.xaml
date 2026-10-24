@@ -28,5 +28,20 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+        <ContentView>
+        </ContentView>
+        <RefreshView Command="{Binding RefreshCommand}" IsRefreshing="{Binding IsBusy}">
+        </RefreshView>
+        <ImageButton Source="dotnet_bot.png" WidthRequest="44" HeightRequest="44" SemanticProperties.Description="Button" />
+        <CheckBox IsChecked="True" />
+        <Switch IsToggled="True" />
+        <RadioButton Content="Option" GroupName="group" />
+        <ActivityIndicator IsRunning="True" />
+        <Rectangle Fill="LightBlue" HeightRequest="60" RadiusX="8" RadiusY="8" />
+        <Ellipse Fill="Orange" WidthRequest="60" HeightRequest="60" />
+        <Rectangle Fill="LightBlue" HeightRequest="60" RadiusX="8" RadiusY="8" />
+        <Line X1="0" X2="200" Stroke="Gray" StrokeThickness="1" />
+        <Line X1="0" X2="200" Stroke="Gray" StrokeThickness="1" />
+        <Rectangle Fill="LightBlue" HeightRequest="60" RadiusX="8" RadiusY="8" />
     </Grid>
 </ContentPage>
