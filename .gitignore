@@ -1,6 +1,11 @@
 bin/
 obj/
 AppPackages/
+*.msix
+*.msixbundle
+*.appx
+*.appxbundle
+*.cer
 .vs/
 *.user
 *.suo
