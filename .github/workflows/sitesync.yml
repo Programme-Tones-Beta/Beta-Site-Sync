@@ -1,0 +1,52 @@
+name: SiteSync CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Restore web dependencies
+        run: dotnet restore Web/SiteSyncTracker.Web.csproj
+
+      - name: Run web tests
+        run: dotnet test Web.Tests/SiteSyncTracker.Web.Tests.csproj --configuration Release --no-restore
+
+      - name: Build web project
+        run: dotnet build Web/SiteSyncTracker.Web.csproj --configuration Release --no-restore
+
+      - name: Build Docker image
+        run: docker build --file Web/Dockerfile --tag sitesync-tracker-web:${{ github.sha }} .
+
+      - name: Validate Docker image health
+        run: docker run --detach --name sitesync-ci --publish 18080:8080 sitesync-tracker-web:${{ github.sha }}
+
+      - name: Wait for health endpoint
+        shell: bash
+        run: |
+          for attempt in {1..30}; do
+            if curl --fail --silent http://localhost:18080/api/health; then exit 0; fi
+            sleep 2
+          done
+          docker logs sitesync-ci
+          exit 1
+
+      - name: Stop validation container
+        if: always()
+        run: docker rm --force sitesync-ci
