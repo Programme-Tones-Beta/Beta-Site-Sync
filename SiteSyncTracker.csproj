@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net10.0-windows10.0.19041.0</TargetFrameworks>
+		<TargetFrameworks>net10.0-android;net10.0-ios;net10.0-maccatalyst;net10.0-windows10.0.19041.0</TargetFrameworks>
 
 		<OutputType>Exe</OutputType>
 		<RootNamespace>SiteSyncTracker</RootNamespace>
@@ -10,7 +10,9 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
-	
+		<!-- Keep unrelated nested sample projects out of this app's default SDK globs. -->
+		<DefaultItemExcludes>$(DefaultItemExcludes);App1\**;MauiApp1\**;SiteSync\**;Web\**;Web.Tests\**</DefaultItemExcludes>
+
 		<!-- Display name -->
 		<ApplicationTitle>SiteSync Tracker</ApplicationTitle>
 
