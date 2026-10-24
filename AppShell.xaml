@@ -6,24 +6,10 @@
     xmlns:local="clr-namespace:SiteSyncTracker"
     xmlns:views="clr-namespace:SiteSyncTracker.Views"
     Title="SiteSync Tracker">
-
     <TabBar>
-        <ShellContent
-            Title="Dashboard"
-            ContentTemplate="{DataTemplate local:MainPage}"
-            Route="MainPage" />
-        <ShellContent
-            Title="Goods In"
-            ContentTemplate="{DataTemplate views:GoodsInPage}"
-            Route="GoodsInPage" />
-        <ShellContent
-            Title="Goods Out"
-            ContentTemplate="{DataTemplate views:GoodsOutPage}"
-            Route="GoodsOutPage" />
-        <ShellContent
-            Title="Inventory"
-            ContentTemplate="{DataTemplate views:InventoryPage}"
-            Route="InventoryPage" />
+        <ShellContent Title="Dashboard" ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+        <ShellContent Title="Goods In" ContentTemplate="{DataTemplate views:GoodsInPage}" Route="GoodsInPage" />
+        <ShellContent Title="Goods Out" ContentTemplate="{DataTemplate views:GoodsOutPage}" Route="GoodsOutPage" />
+        <ShellContent Title="Inventory" ContentTemplate="{DataTemplate views:InventoryPage}" Route="InventoryPage" />
     </TabBar>
-
 </Shell>

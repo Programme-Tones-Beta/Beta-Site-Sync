@@ -3,57 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SiteSyncTracker.Views.InventoryPage"
              Title="Inventory">
-
-    <Grid RowDefinitions="Auto,*" Padding="16" RowSpacing="12">
-
-        <SearchBar Grid.Row="0" Placeholder="Search manifest or description" />
-
-        <ScrollView Grid.Row="1">
-            <VerticalStackLayout Spacing="10">
-
-                <Border Padding="12" StrokeShape="RoundRectangle 8" Stroke="{StaticResource Gray300}">
-                    <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto,Auto">
-                        <Label Text="MAN-1042" FontAttributes="Bold" />
-                        <Label Grid.Row="1" Text="Rebar bundles" />
-                        <Label Grid.Row="2" Text="Main Laydown Yard  |  8 / 10 received" TextColor="{StaticResource Gray500}" />
-                        <Label Grid.RowSpan="3" Grid.Column="1" Text="Delivered" VerticalOptions="Center"
-                               FontAttributes="Bold" TextColor="{StaticResource StatusBlue}" />
-                    </Grid>
-                </Border>
-
-                <Border Padding="12" StrokeShape="RoundRectangle 8" Stroke="{StaticResource Gray300}">
-                    <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto,Auto">
-                        <Label Text="MAN-1038" FontAttributes="Bold" />
-                        <Label Grid.Row="1" Text="Steel beams" />
-                        <Label Grid.Row="2" Text="Level 1 Structure  |  40 / 40 received" TextColor="{StaticResource Gray500}" />
-                        <Label Grid.RowSpan="3" Grid.Column="1" Text="Staged" VerticalOptions="Center"
-                               FontAttributes="Bold" TextColor="{StaticResource SafetyOrange}" />
-                    </Grid>
-                </Border>
-
-                <Border Padding="12" StrokeShape="RoundRectangle 8" Stroke="{StaticResource Gray300}">
-                    <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto,Auto">
-                        <Label Text="MAN-1031" FontAttributes="Bold" />
-                        <Label Grid.Row="1" Text="Conduit 25mm" />
-                        <Label Grid.Row="2" Text="In transit  |  0 / 200 received" TextColor="{StaticResource Gray500}" />
-                        <Label Grid.RowSpan="3" Grid.Column="1" Text="In Transit" VerticalOptions="Center"
-                               FontAttributes="Bold" TextColor="{StaticResource StatusAmber}" />
-                    </Grid>
-                </Border>
-
-                <Border Padding="12" StrokeShape="RoundRectangle 8" Stroke="{StaticResource Gray300}">
-                    <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto,Auto">
-                        <Label Text="MAN-1020" FontAttributes="Bold" />
-                        <Label Grid.Row="1" Text="Window frames" />
-                        <Label Grid.Row="2" Text="Level 1 Structure  |  12 / 12 received" TextColor="{StaticResource Gray500}" />
-                        <Label Grid.RowSpan="3" Grid.Column="1" Text="Installed" VerticalOptions="Center"
-                               FontAttributes="Bold" TextColor="{StaticResource StatusGreen}" />
-                    </Grid>
-                </Border>
-
-            </VerticalStackLayout>
-        </ScrollView>
-
+    <Grid RowDefinitions="Auto,Auto,*" Padding="16" RowSpacing="12">
+        <SearchBar x:Name="SearchEntry" Grid.Row="0" Placeholder="Search manifest or description"
+                   TextChanged="OnSearchTextChanged" />
+        <ActivityIndicator x:Name="LoadingIndicator" Grid.Row="1" IsVisible="False" />
+        <CollectionView x:Name="InventoryList" Grid.Row="2" EmptyView="No inventory items found.">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border Padding="12" Margin="0,0,0,10" StrokeShape="RoundRectangle 8"
+                            Stroke="{StaticResource Gray300}">
+                        <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto,Auto">
+                            <Label Text="{Binding ManifestNumber}" FontAttributes="Bold" />
+                            <Label Grid.Row="1" Text="{Binding Description}" />
+                            <Label Grid.Row="2" Text="{Binding QuantityReceived, StringFormat='{0} received'}"
+                                   TextColor="{StaticResource Gray500}" />
+                            <VerticalStackLayout Grid.RowSpan="3" Grid.Column="1" Spacing="4"
+                                                 VerticalOptions="Center" HorizontalOptions="End">
+                                <Label Text="{Binding CurrentStatus.StatusName}" FontAttributes="Bold"
+                                       TextColor="{StaticResource StatusBlue}" />
+                                <Label Text="{Binding CurrentLocation.ZoneName}" TextColor="{StaticResource Gray500}" />
+                            </VerticalStackLayout>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
     </Grid>
-
 </ContentPage>

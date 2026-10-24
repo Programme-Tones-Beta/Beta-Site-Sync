@@ -6,7 +6,6 @@
 
     <ScrollView>
         <VerticalStackLayout Padding="16" Spacing="16">
-
             <Label Text="Site Overview"
                    FontSize="26"
                    FontAttributes="Bold"
@@ -44,26 +43,16 @@
             </Grid>
 
             <Label Text="Quick Actions" FontSize="20" FontAttributes="Bold" />
-
-            <Button Text="Goods In (Receive)"
-                    HeightRequest="64"
-                    FontSize="20"
-                    BackgroundColor="{StaticResource StatusGreen}"
-                    TextColor="White"
-                    SemanticProperties.Hint="Opens the goods in form" />
-            <Button Text="Goods Out (Issue)"
-                    HeightRequest="64"
-                    FontSize="20"
-                    BackgroundColor="{StaticResource SafetyOrange}"
-                    TextColor="White"
-                    SemanticProperties.Hint="Opens the goods out form" />
-            <Button Text="Scan Manifest"
-                    HeightRequest="64"
-                    FontSize="20"
-                    SemanticProperties.Hint="Scans a manifest barcode" />
+            <Button Text="Goods In (Receive)" HeightRequest="64" FontSize="20"
+                    BackgroundColor="{StaticResource StatusGreen}" TextColor="White"
+                    Clicked="OnGoodsInClicked" SemanticProperties.Hint="Opens the goods in form" />
+            <Button Text="Goods Out (Issue)" HeightRequest="64" FontSize="20"
+                    BackgroundColor="{StaticResource SafetyOrange}" TextColor="White"
+                    Clicked="OnGoodsOutClicked" SemanticProperties.Hint="Opens the goods out form" />
+            <Button Text="Scan Manifest" HeightRequest="64" FontSize="20"
+                    Clicked="OnInventoryClicked" SemanticProperties.Hint="Opens inventory search" />
 
             <Label Text="Recent Activity" FontSize="20" FontAttributes="Bold" />
-
             <Border Padding="12" StrokeShape="RoundRectangle 8" Stroke="{StaticResource Gray300}">
                 <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto">
                     <Label Grid.Row="0" Text="MAN-1042 Rebar bundles" FontAttributes="Bold" />
@@ -80,8 +69,6 @@
                            TextColor="{StaticResource SafetyOrange}" FontAttributes="Bold" />
                 </Grid>
             </Border>
-
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
