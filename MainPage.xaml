@@ -36,34 +36,38 @@
                 <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" ColumnSpacing="14" RowSpacing="14">
                     <Border Grid.Row="0" Grid.Column="0" Padding="16,18" StrokeThickness="0" StrokeShape="RoundRectangle 12" BackgroundColor="#B7782D">
                         <VerticalStackLayout Spacing="4">
-                            <Label Text="12" FontSize="54" FontAttributes="Bold" TextColor="White" />
+                            <Label Text="12" FontSize="54" FontAttributes="Bold" TextColor="White" SemanticProperties.HeadingLevel="Level3" />
                             <Label Text="In Transit" FontSize="20" TextColor="White" />
                         </VerticalStackLayout>
                     </Border>
 
                     <Border Grid.Row="0" Grid.Column="1" Padding="16,18" StrokeThickness="0" StrokeShape="RoundRectangle 12" BackgroundColor="#1E78B8">
                         <VerticalStackLayout Spacing="4">
-                            <Label Text="48" FontSize="54" FontAttributes="Bold" TextColor="White" />
+                            <Label Text="48" FontSize="54" FontAttributes="Bold" TextColor="White" SemanticProperties.HeadingLevel="Level3" />
                             <Label Text="Delivered to Yard" FontSize="20" TextColor="White" />
                         </VerticalStackLayout>
                     </Border>
 
                     <Border Grid.Row="1" Grid.Column="0" Padding="16,18" StrokeThickness="0" StrokeShape="RoundRectangle 12" BackgroundColor="#E8551A">
                         <VerticalStackLayout Spacing="4">
-                            <Label Text="21" FontSize="54" FontAttributes="Bold" TextColor="White" />
+                            <Label Text="21" FontSize="54" FontAttributes="Bold" TextColor="White" SemanticProperties.HeadingLevel="Level3" />
                             <Label Text="Staged on Level" FontSize="20" TextColor="White" />
                         </VerticalStackLayout>
                     </Border>
 
                     <Border Grid.Row="1" Grid.Column="1" Padding="16,18" StrokeThickness="0" StrokeShape="RoundRectangle 12" BackgroundColor="#1D8F4D">
                         <VerticalStackLayout Spacing="4">
-                            <Label Text="95" FontSize="54" FontAttributes="Bold" TextColor="White" />
+                            <Label Text="95" FontSize="54" FontAttributes="Bold" TextColor="White" SemanticProperties.HeadingLevel="Level3" />
                             <Label Text="Installed" FontSize="20" TextColor="White" />
                         </VerticalStackLayout>
                     </Border>
                 </Grid>
 
-                <Label Text="Quick Actions" FontSize="30" FontAttributes="Bold" Margin="0,8,0,0" />
+                <Label Text="Quick Actions"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       Margin="0,8,0,0"
+                       SemanticProperties.HeadingLevel="Level2" />
 
                 <Button Text="Goods In (Receive)"
                         HeightRequest="72"
@@ -95,7 +99,11 @@
                         Clicked="OnInventoryClicked"
                         SemanticProperties.Hint="Opens inventory search" />
 
-                <Label Text="Recent Activity" FontSize="30" FontAttributes="Bold" Margin="0,8,0,0" />
+                <Label Text="Recent Activity"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       Margin="0,8,0,0"
+                       SemanticProperties.HeadingLevel="Level2" />
 
                 <Border Padding="16,14" StrokeThickness="1.5" Stroke="#C9C9C9" StrokeShape="RoundRectangle 12" BackgroundColor="#F5F5F5">
                     <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto">
