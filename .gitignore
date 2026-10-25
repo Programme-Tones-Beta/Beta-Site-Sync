@@ -15,5 +15,3 @@ AppPackages/
 *.db
 *.db-shm
 *.db-wal
-
-.fake
