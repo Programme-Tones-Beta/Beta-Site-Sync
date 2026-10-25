@@ -15,6 +15,10 @@
                         <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto,Auto">
                             <Label Text="{Binding ManifestNumber}" FontAttributes="Bold" />
                             <Label Grid.Row="1" Text="{Binding Description}" />
+                            <ContentView>
+                            </ContentView>
+                            <RefreshView Command="{Binding RefreshCommand}" IsRefreshing="{Binding IsBusy}">
+                            </RefreshView>
                             <Label Grid.Row="2" Text="{Binding QuantityReceived, StringFormat='{0} received'}"
                                    TextColor="{StaticResource Gray500}" />
                             <VerticalStackLayout Grid.RowSpan="3" Grid.Column="1" Spacing="4"
