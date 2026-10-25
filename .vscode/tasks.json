@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "dotnet",
+			"task": "clean",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "dotnet: clean"
+		},
+		{
+			"type": "dotnet",
+			"task": "build",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"label": "dotnet: build"
+		},
+		{
+			"type": "cmake",
+			"label": "CMake: clean",
+			"command": "clean",
+			"problemMatcher": [],
+			"detail": "CMake template clean task"
+		}
+	]
+}

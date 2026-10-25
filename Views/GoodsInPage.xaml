@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SiteSyncTracker.Views.GoodsInPage" Title="Goods In">
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="12">
+            <Label Text="Receive Delivery" FontSize="26" FontAttributes="Bold" />
+            <Entry x:Name="ManifestEntry" Placeholder="Manifest number" MaxLength="50" />
+            <Editor x:Name="DescriptionEntry" Placeholder="What was delivered?" MaxLength="255" HeightRequest="96" />
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+                <Entry x:Name="ExpectedEntry" Placeholder="Qty expected" Keyboard="Numeric" />
+                <Entry x:Name="ReceivedEntry" Grid.Column="1" Placeholder="Qty received" Keyboard="Numeric" />
+            </Grid>
+            <Picker x:Name="LocationPicker" Title="Select location" ItemDisplayBinding="{Binding ZoneName}" />
+            <Picker x:Name="StatusPicker" Title="Select status" ItemDisplayBinding="{Binding StatusName}" />
+            <Entry x:Name="NotifyEntry" Placeholder="Notification email or phone" MaxLength="255" />
+            <Button Text="Confirm Receipt" Clicked="OnConfirmReceiptClicked" BackgroundColor="{StaticResource StatusGreen}" TextColor="White" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,28 @@
+services:
+  sitesync-web:
+    build:
+      context: .
+      dockerfile: Web/Dockerfile
+    image: sitesync-tracker-web:local
+    restart: unless-stopped
+    ports:
+      - "${SITESYNC_PORT:-8080}:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      DisableHttpsRedirection: "true"
+      ConnectionStrings__Inventory: Data Source=/data/sitesync.db
+      ConnectionStrings__Identity: Data Source=/data/sitesync-auth.db
+      Admin__Email: ${ADMIN_EMAIL:?Set ADMIN_EMAIL in .env}
+      Admin__Password: ${ADMIN_PASSWORD:?Set ADMIN_PASSWORD in .env}
+      DataProtection__PersistKeysToFileSystem: /data/keys
+    volumes:
+      - sitesync-data:/data
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "--silent", "http://localhost:8080/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+
+volumes:
+  sitesync-data:

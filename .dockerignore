@@ -1,0 +1,15 @@
+**
+!Web/
+!Web/**
+!Models/
+!Models/**
+!Data/
+!Data/**
+
+**/.editorconfig
+**/bin/
+**/obj/
+**/.vs/
+**/*.db
+**/*.db-shm
+**/*.db-wal

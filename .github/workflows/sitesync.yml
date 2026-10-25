@@ -1,0 +1,174 @@
+name: SiteSync CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v5
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Restore web and test dependencies
+        run: dotnet restore Web.Tests/SiteSyncTracker.Web.Tests.csproj
+
+      - name: Run web tests
+        run: dotnet test Web.Tests/SiteSyncTracker.Web.Tests.csproj --configuration Release --no-restore
+
+      - name: Build web project
+        run: dotnet build Web/SiteSyncTracker.Web.csproj --configuration Release --no-restore
+
+      - name: Build Docker image
+        run: docker build --file Web/Dockerfile --tag sitesync-tracker-web:${{ github.sha }} .
+
+      - name: Validate Docker image health
+        run: >-
+          docker run --detach --name sitesync-ci --publish 18080:8080
+          --volume sitesync-ci-data:/data
+          --env ASPNETCORE_ENVIRONMENT=Production
+          --env ConnectionStrings__Inventory='Data Source=/data/sitesync.db'
+          --env ConnectionStrings__Identity='Data Source=/data/sitesync-auth.db'
+          --env Admin__Email=ci-admin@example.com
+          --env Admin__Password=ci-Only-Password-123!
+          sitesync-tracker-web:${{ github.sha }}
+
+      - name: Wait for health endpoint
+        shell: bash
+        run: |
+          for attempt in {1..30}; do
+            if curl --fail --silent http://localhost:18080/api/health; then exit 0; fi
+            sleep 2
+          done
+          docker logs sitesync-ci
+          exit 1
+
+      - name: Stop validation container
+        if: always()
+        run: docker rm --force sitesync-ci
+
+  android-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v5
+
+      - name: Set up Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Install Android workload
+        run: dotnet workload install maui-android
+
+      - name: Restore Android project
+        run: dotnet restore SiteSyncTracker.csproj -p:TargetFramework=net10.0-android
+
+      - name: Build Android APK
+        run: >-
+          dotnet publish SiteSyncTracker.csproj
+          --configuration Release
+          --framework net10.0-android
+          --no-restore
+          -p:AndroidPackageFormat=apk
+
+      - name: Find Android APK
+        shell: bash
+        run: |
+          apk_path=$(find bin/Release/net10.0-android -type f -name '*.apk' | head -n 1)
+          test -n "$apk_path"
+          cp "$apk_path" SiteSyncTracker.apk
+
+      - name: Upload Android APK
+        uses: actions/upload-artifact@v5
+        with:
+          name: sitesync-android-apk
+          path: SiteSyncTracker.apk
+          if-no-files-found: error
+
+  android-release:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: android-build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v5
+
+      - name: Set up Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Install Android workload
+        run: dotnet workload install maui-android
+
+      - name: Restore Android project
+        run: dotnet restore SiteSyncTracker.csproj -p:TargetFramework=net10.0-android
+
+      - name: Build unsigned Android App Bundle
+        run: >-
+          dotnet publish SiteSyncTracker.csproj
+          --configuration Release
+          --framework net10.0-android
+          --no-restore
+          -p:AndroidPackageFormat=aab
+          -p:AndroidKeyStore=false
+
+      - name: Upload Android App Bundle
+        uses: actions/upload-artifact@v5
+        with:
+          name: sitesync-android-aab
+          path: bin/Release/net10.0-android/**/*.aab
+          if-no-files-found: error
+
+  android-emulator:
+    needs: android-build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Android APK
+        uses: actions/download-artifact@v6
+        with:
+          name: sitesync-android-apk
+          path: .
+
+      - name: Run Android emulator smoke test
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 35
+          arch: x86_64
+          profile: Pixel_2
+          script: |
+            set -euxo pipefail
+            adb install -r SiteSyncTracker.apk
+            adb shell pm list packages | grep com.companyname.sitesynctracker
+            adb shell monkey -p com.companyname.sitesynctracker -c android.intent.category.LAUNCHER 1
+            sleep 5
+            adb shell dumpsys activity activities | grep -A 8 com.companyname.sitesynctracker || true
+            adb shell pidof com.companyname.sitesynctracker
+            adb logcat -d -t 300

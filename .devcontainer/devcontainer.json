@@ -1,0 +1,19 @@
+{
+  "name": "SiteSync Tracker .NET Development",
+  "image": "mcr.microsoft.com/dotnet/sdk:10.0",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csdevkit",
+        "ms-azuretools.vscode-docker",
+        "streetsidesoftware.code-spell-checker"
+      ]
+    }
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "dotnet restore Web/SiteSyncTracker.Web.csproj && dotnet restore Web.Tests/SiteSyncTracker.Web.Tests.csproj",
+  "remoteUser": "root"
+}
