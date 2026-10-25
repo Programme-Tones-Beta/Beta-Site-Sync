@@ -58,3 +58,69 @@ jobs:
       - name: Stop validation container
         if: always()
         run: docker rm --force sitesync-ci
+
+  android-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v5
+
+      - name: Set up Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Install Android workload
+        run: dotnet workload install maui-android
+
+      - name: Restore Android project
+        run: dotnet restore SiteSyncTracker.csproj
+
+      - name: Build Android APK
+        run: >-
+          dotnet publish SiteSyncTracker.csproj
+          --configuration Release
+          --framework net10.0-android
+          --no-restore
+          -p:AndroidPackageFormat=apk
+
+      - name: Find Android APK
+        shell: bash
+        run: |
+          apk_path=$(find bin/Release/net10.0-android -type f -name '*.apk' | head -n 1)
+          test -n "$apk_path"
+          cp "$apk_path" SiteSyncTracker.apk
+
+      - name: Upload Android APK
+        uses: actions/upload-artifact@v5
+        with:
+          name: sitesync-android-apk
+          path: SiteSyncTracker.apk
+          if-no-files-found: error
+
+  android-emulator:
+    needs: android-build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Android APK
+        uses: actions/download-artifact@v6
+        with:
+          name: sitesync-android-apk
+          path: .
+
+      - name: Run Android emulator smoke test
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 35
+          arch: x86_64
+          profile: Pixel_2
+          script: |
+            adb install -r SiteSyncTracker.apk
+            adb shell monkey -p com.companyname.sitesynctracker 1
+            adb shell pidof com.companyname.sitesynctracker

@@ -11,7 +11,7 @@
 		<Nullable>enable</Nullable>
 
 		<!-- Keep unrelated nested sample projects out of this app's default SDK globs. -->
-		<DefaultItemExcludes>$(DefaultItemExcludes);App1\**;MauiApp1\**;SiteSync\**;Web\**;Web.Tests\**</DefaultItemExcludes>
+		<DefaultItemExcludes>$(DefaultItemExcludes);App1\**;MauiApp1\**;SiteSync\**;Web\**;Web.Tests\**;microsoft.android.sdk.windows.37.2.0-rc.2.84\**</DefaultItemExcludes>
 
 		<!-- Display name -->
 		<ApplicationTitle>SiteSync Tracker</ApplicationTitle>
@@ -30,8 +30,9 @@
 		<AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
 		<GenerateAppxPackageOnBuild Condition="'$(Configuration)' == 'Release'">true</GenerateAppxPackageOnBuild>
 
-		<SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
-		<TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+		<SupportedOSPlatformVersion Condition="'$([MSBuild]::GetTargetPlatformIdentifier($(TargetFramework)))' == 'android'">21.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="'$([MSBuild]::GetTargetPlatformIdentifier($(TargetFramework)))' != 'android'">10.0.17763.0</SupportedOSPlatformVersion>
+		<TargetPlatformMinVersion Condition="'$([MSBuild]::GetTargetPlatformIdentifier($(TargetFramework)))' != 'android'">10.0.17763.0</TargetPlatformMinVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
