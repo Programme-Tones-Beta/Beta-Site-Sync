@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="Web/SiteSyncTracker.Web.csproj" />
+  <Project Path="SiteSyncTracker.csproj" />
   <Project Path="Web.Tests/SiteSyncTracker.Web.Tests.csproj">
     <BuildDependency Project="Web/SiteSyncTracker.Web.csproj" />
   </Project>
