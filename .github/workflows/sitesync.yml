@@ -121,6 +121,11 @@ jobs:
           arch: x86_64
           profile: Pixel_2
           script: |
+            set -euxo pipefail
             adb install -r SiteSyncTracker.apk
-            adb shell monkey -p com.companyname.sitesynctracker 1
+            adb shell pm list packages | grep com.companyname.sitesynctracker
+            adb shell monkey -p com.companyname.sitesynctracker -c android.intent.category.LAUNCHER 1
+            sleep 5
+            adb shell dumpsys activity activities | grep -A 8 com.companyname.sitesynctracker || true
             adb shell pidof com.companyname.sitesynctracker
+            adb logcat -d -t 300
