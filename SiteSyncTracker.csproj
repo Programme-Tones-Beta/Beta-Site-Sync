@@ -22,6 +22,7 @@
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0.0</ApplicationDisplayVersion>
 		<ApplicationVersion>1</ApplicationVersion>
+		<AndroidUsesCleartextTraffic Condition="'$(Configuration)' == 'Debug'">true</AndroidUsesCleartextTraffic>
 
 		<!-- Unpackaged for local F5; MSIX for Microsoft Store / Release. -->
 		<WindowsPackageType Condition="'$(Configuration)' != 'Release'">None</WindowsPackageType>

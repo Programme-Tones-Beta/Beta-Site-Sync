@@ -104,6 +104,49 @@ jobs:
           path: SiteSyncTracker.apk
           if-no-files-found: error
 
+  android-release:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: android-build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v5
+
+      - name: Set up Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Install Android workload
+        run: dotnet workload install maui-android
+
+      - name: Restore Android project
+        run: dotnet restore SiteSyncTracker.csproj -p:TargetFramework=net10.0-android
+
+      - name: Build unsigned Android App Bundle
+        run: >-
+          dotnet publish SiteSyncTracker.csproj
+          --configuration Release
+          --framework net10.0-android
+          --no-restore
+          -p:AndroidPackageFormat=aab
+          -p:AndroidKeyStore=false
+
+      - name: Upload Android App Bundle
+        uses: actions/upload-artifact@v5
+        with:
+          name: sitesync-android-aab
+          path: bin/Release/net10.0-android/**/*.aab
+          if-no-files-found: error
+
   android-emulator:
     needs: android-build
     runs-on: ubuntu-latest
