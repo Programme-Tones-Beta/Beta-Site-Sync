@@ -4,48 +4,61 @@
              x:Class="SiteSyncTracker.Views.InventoryPage"
              Title="Inventory">
     <Grid RowDefinitions="Auto,Auto,*" Padding="16" RowSpacing="12">
-        <SearchBar x:Name="SearchEntry" Grid.Row="0" Placeholder="Search manifest or description"
+        <SearchBar x:Name="SearchEntry"
+                   Grid.Row="0"
+                   Placeholder="Search manifest or description"
                    TextChanged="OnSearchTextChanged" />
-        <ActivityIndicator x:Name="LoadingIndicator" Grid.Row="1" IsVisible="False" />
-        <CollectionView x:Name="InventoryList" Grid.Row="2" EmptyView="No inventory items found.">
+
+        <ActivityIndicator x:Name="LoadingIndicator"
+                           Grid.Row="1"
+                           IsVisible="False"
+                           IsRunning="{Binding IsVisible, Source={x:Reference LoadingIndicator}}"
+                           HorizontalOptions="Center" />
+
+        <CollectionView x:Name="InventoryList"
+                        Grid.Row="2"
+                        EmptyView="No inventory items found.">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Border Padding="12" Margin="0,0,0,10" StrokeShape="RoundRectangle 8"
-                            Stroke="{StaticResource Gray300}">
-                        <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto,Auto">
-                            <Label Text="{Binding ManifestNumber}" FontAttributes="Bold" />
-                            <Label Grid.Row="1" Text="{Binding Description}" />
-                            <ContentView>
-                            </ContentView>
-                            <RefreshView Command="{Binding RefreshCommand}" IsRefreshing="{Binding IsBusy}">
-                            </RefreshView>
-                            <Label Grid.Row="2" Text="{Binding QuantityReceived, StringFormat='{0} received'}"
+                    <Border Padding="12"
+                            Margin="0,0,0,10"
+                            Stroke="{StaticResource Gray300}"
+                            StrokeShape="RoundRectangle 8">
+                        <Grid ColumnDefinitions="*,Auto"
+                              RowDefinitions="Auto,Auto,Auto,Auto,Auto"
+                              ColumnSpacing="12"
+                              RowSpacing="4">
+                            <Label Text="{Binding ManifestNumber}"
+                                   FontAttributes="Bold"
+                                   FontSize="16" />
+                            <Label Grid.Row="1"
+                                   Text="{Binding Description}"
+                                   LineBreakMode="WordWrap" />
+                            <Label Grid.Row="2"
+                                   Text="{Binding QuantityReceived, StringFormat='Received: {0}'}"
                                    TextColor="{StaticResource Gray500}" />
-                            <VerticalStackLayout Grid.RowSpan="3" Grid.Column="1" Spacing="4"
-                                                 VerticalOptions="Center" HorizontalOptions="End">
-                                <Label Text="{Binding CurrentStatus.StatusName}" FontAttributes="Bold"
+                            <Label Grid.Row="3"
+                                   Text="{Binding QuantityExpected, StringFormat='Expected: {0}'}"
+                                   TextColor="{StaticResource Gray500}" />
+                            <Label Grid.Row="4"
+                                   Text="{Binding DateUpdated, StringFormat='Updated: {0:G}'}"
+                                   FontSize="12"
+                                   TextColor="{StaticResource Gray500}" />
+                            <VerticalStackLayout Grid.RowSpan="5"
+                                                 Grid.Column="1"
+                                                 Spacing="4"
+                                                 VerticalOptions="Center"
+                                                 HorizontalOptions="End">
+                                <Label Text="{Binding CurrentStatus.StatusName}"
+                                       FontAttributes="Bold"
                                        TextColor="{StaticResource StatusBlue}" />
-                                <Label Text="{Binding CurrentLocation.ZoneName}" TextColor="{StaticResource Gray500}" />
+                                <Label Text="{Binding CurrentLocation.ZoneName}"
+                                       TextColor="{StaticResource Gray500}" />
                             </VerticalStackLayout>
                         </Grid>
                     </Border>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-        <ContentView>
-        </ContentView>
-        <RefreshView Command="{Binding RefreshCommand}" IsRefreshing="{Binding IsBusy}">
-        </RefreshView>
-        <ImageButton Source="dotnet_bot.png" WidthRequest="44" HeightRequest="44" SemanticProperties.Description="Button" />
-        <CheckBox IsChecked="True" />
-        <Switch IsToggled="True" />
-        <RadioButton Content="Option" GroupName="group" />
-        <ActivityIndicator IsRunning="True" />
-        <Rectangle Fill="LightBlue" HeightRequest="60" RadiusX="8" RadiusY="8" />
-        <Ellipse Fill="Orange" WidthRequest="60" HeightRequest="60" />
-        <Rectangle Fill="LightBlue" HeightRequest="60" RadiusX="8" RadiusY="8" />
-        <Line X1="0" X2="200" Stroke="Gray" StrokeThickness="1" />
-        <Line X1="0" X2="200" Stroke="Gray" StrokeThickness="1" />
-        <Rectangle Fill="LightBlue" HeightRequest="60" RadiusX="8" RadiusY="8" />
     </Grid>
 </ContentPage>
