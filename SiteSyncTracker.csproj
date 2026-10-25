@@ -11,7 +11,7 @@
 		<Nullable>enable</Nullable>
 
 		<!-- Keep unrelated nested sample projects out of this app's default SDK globs. -->
-		<DefaultItemExcludes>$(DefaultItemExcludes);App1\**;MauiApp1\**;SiteSync\**;Web\**;Web.Tests\**;microsoft.android.sdk.windows.37.2.0-rc.2.84\**</DefaultItemExcludes>
+		<DefaultItemExcludes>$(DefaultItemExcludes);App1\**;MauiApp1\**;SiteSync\**;Web\**;Web.Tests\**</DefaultItemExcludes>
 
 		<!-- Display name -->
 		<ApplicationTitle>SiteSync Tracker</ApplicationTitle>

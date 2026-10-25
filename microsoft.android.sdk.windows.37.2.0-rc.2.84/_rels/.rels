@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
-  <Relationship Type="http://schemas.microsoft.com/packaging/2010/07/manifest" Target="/Microsoft.Android.Sdk.Windows.nuspec" Id="R6D614AE07ED55BF0" />
-  <Relationship Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties" Target="/package/services/metadata/core-properties/14f28e231643495d8eedbc34192b1459.psmdcp" Id="RE89D3A4B1C54BC9D" />
-</Relationships>
