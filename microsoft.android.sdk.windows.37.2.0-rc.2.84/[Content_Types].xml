@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
+  <Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml" />
+  <Default Extension="psmdcp" ContentType="application/vnd.openxmlformats-package.core-properties+xml" />
+  <Default Extension="png" ContentType="application/octet" />
+  <Default Extension="targets" ContentType="application/octet" />
+  <Default Extension="dll" ContentType="application/octet" />
+  <Default Extension="props" ContentType="application/octet" />
+  <Default Extension="TXT" ContentType="application/octet" />
+  <Default Extension="exe" ContentType="application/octet" />
+  <Default Extension="jar" ContentType="application/octet" />
+  <Default Extension="xml" ContentType="application/octet" />
+  <Default Extension="json" ContentType="application/octet" />
+  <Default Extension="cp" ContentType="application/octet" />
+  <Default Extension="find" ContentType="application/octet" />
+  <Default Extension="stat" ContentType="application/octet" />
+  <Default Extension="sync" ContentType="application/octet" />
+  <Default Extension="aotprofile" ContentType="application/octet" />
+  <Default Extension="dex" ContentType="application/octet" />
+  <Default Extension="cmd" ContentType="application/octet" />
+  <Default Extension="commit" ContentType="application/octet" />
+  <Default Extension="rev" ContentType="application/octet" />
+  <Default Extension="cs" ContentType="application/octet" />
+  <Default Extension="nuspec" ContentType="application/octet" />
+  <Override PartName="/tools/MULTIDEX_JAR_LICENSE" ContentType="application/octet" />
+  <Override PartName="/tools/Version" ContentType="application/octet" />
+</Types>
