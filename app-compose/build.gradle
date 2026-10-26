@@ -22,12 +22,12 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 33
     buildToolsVersion build_tools_version
     defaultConfig {
         applicationId 'com.example.android.trackr.compose'
         minSdk 21
-        targetSdk 30
+        targetSdk 33
         versionCode 1
         versionName '1.0.0-alpha01'
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
@@ -45,7 +45,6 @@ android {
     }
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
-        useIR = true
     }
     buildFeatures {
         compose true

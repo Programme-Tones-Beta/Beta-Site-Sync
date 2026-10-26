@@ -23,13 +23,13 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 33
     buildToolsVersion build_tools_version
 
     defaultConfig {
         applicationId "com.example.android.trackr"
         minSdkVersion 23
-        targetSdkVersion 30
+        targetSdkVersion 31
         multiDexEnabled true
         versionCode 1
         versionName "1.0.0-alpha01"
