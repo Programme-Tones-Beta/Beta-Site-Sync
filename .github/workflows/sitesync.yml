@@ -174,7 +174,3 @@ jobs:
             adb logcat -d -t 300
 
 
-defaults:
-env:
-run-name:
-concurrency:
