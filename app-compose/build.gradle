@@ -31,6 +31,11 @@ android {
         versionCode 1
         versionName '1.0.0-alpha01'
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        externalNativeBuild {
+            cmake {
+                cppFlags ''
+            }
+        }
     }
     buildTypes {
         release {
@@ -64,6 +69,12 @@ android {
     packagingOptions {
         excludes += '/META-INF/AL2.0'
         excludes += '/META-INF/LGPL2.1'
+    }
+    externalNativeBuild {
+        cmake {
+            path file('src/main/cpp/CMakeLists.txt')
+            version '3.22.1'
+        }
     }
 }
 

@@ -37,6 +37,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         vectorDrawables.useSupportLibrary = true
+        signingConfig signingConfigs.debug
     }
 
     buildFeatures {
