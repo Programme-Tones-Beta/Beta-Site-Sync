@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+# For most projects, this workflow file will not need changing; you simply need
+>>>>>>> 4e852e9e0bf72350987e096fdd7729aa4e90079c
 #name: "CodeQL Advanced"
 - name: Close Stale Issues
   uses: actions/stale@v11.0.0
